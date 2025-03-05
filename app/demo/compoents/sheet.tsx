@@ -18,6 +18,7 @@ import { UniverSheetsFilterPreset } from '@univerjs/presets/preset-sheets-filter
 import sheetsFilterEnUS from '@univerjs/presets/preset-sheets-filter/locales/en-US';
 import { UniverSheetsHyperLinkPreset } from '@univerjs/presets/preset-sheets-hyper-link';
 import sheetsHyperLinkEnUS from '@univerjs/presets/preset-sheets-hyper-link/locales/en-US';
+import '@univerjs/sheets/facade';
 // import { WORKBOOK_DATA } from "./data";
 
 // import "./style.css";
@@ -59,5 +60,5 @@ export default function Sheet() {
         univerAPI.createWorkbook({ name: 'Test Sheet' });
     }, []);
 
-    return <div id="app" />;
+    return <div id="app" style={{ height: '100vh' }} />;
 }

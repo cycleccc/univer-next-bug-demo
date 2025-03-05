@@ -11,6 +11,9 @@ importers:
       '@univerjs/presets':
         specifier: ^0.6.2
         version: 0.6.2(@grpc/grpc-js@1.12.6)(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(@wendellhu/redi@0.17.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rxjs@7.8.2)(typescript@5.8.2)
+      '@univerjs/sheets':
+        specifier: ^0.6.2
+        version: 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
       next:
         specifier: 15.2.1
         version: 15.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -943,6 +946,12 @@ packages:
       '@wendellhu/redi': 0.17.1
       rxjs: '>=7.0.0'
 
+  '@univerjs/core@0.6.3':
+    resolution: {integrity: sha512-NfwCHp8rpDV6I86XcV3CLDTVW37i+Ykp6YsmxhW/1gF4mrEAvxENSvb1rf1kqkdBqvVyMXZe89Vv0I58Le+gog==}
+    peerDependencies:
+      '@wendellhu/redi': 0.17.1
+      rxjs: '>=7.0.0'
+
   '@univerjs/data-validation@0.6.2':
     resolution: {integrity: sha512-6aqp9MuCcdA28HeyYIlHMJPdl7A8rBIrKTkFn0DXD1Wkr+DP/a0s01pFqKhyGlOL+JS15C97pdbIfAFXPwxnAA==}
     peerDependencies:
@@ -1005,8 +1014,16 @@ packages:
     peerDependencies:
       rxjs: '>=7.0.0'
 
+  '@univerjs/engine-formula@0.6.3':
+    resolution: {integrity: sha512-AeeNZkU3FW6q0THpJw3zo6hoN0h+t0Zr+Uuqdk68bmBU2YiuDrzfHaNeOMxR6Wwvhg9/3V6lMWf7uCyjvASgHg==}
+    peerDependencies:
+      rxjs: '>=7.0.0'
+
   '@univerjs/engine-numfmt@0.6.2':
     resolution: {integrity: sha512-AdjY/3c/15kSWvcTKHcyMA3FuR9FyKhZXBz0k4CNPwKHgbdk0spGF08K+fjVzCBnHiCUmyauoil6oqOuZRt7TA==}
+
+  '@univerjs/engine-numfmt@0.6.3':
+    resolution: {integrity: sha512-qvkBmZoZlTBeSXtLjCssaiyh7/JdKFNrh6HrwPUvB1Q46EIR3VbsxjpBlW5jfmRWWsAduF3GHZdRSI71Pq46+g==}
 
   '@univerjs/engine-render@0.6.2':
     resolution: {integrity: sha512-2FQMl+1NfEalxeve3rc+9338ox+S6orEEXlx8g9OOMysnYIgMYdpmMeqOELW8tDcQye6rO0Ym1zJjXnMY72iSg==}
@@ -1179,6 +1196,11 @@ packages:
     peerDependencies:
       rxjs: '>=7.0.0'
 
+  '@univerjs/rpc@0.6.3':
+    resolution: {integrity: sha512-3xfZ4Bhj8Od/zwirIH3zsnMA2BLAao/J1DrqcE3ZDGQSU7hegyM4DbUUNVkYJ8Puw2h8Zs3yvyz4dCjg0+x9QA==}
+    peerDependencies:
+      rxjs: '>=7.0.0'
+
   '@univerjs/sheets-conditional-formatting-ui@0.6.2':
     resolution: {integrity: sha512-a2+Akq6Ck6KXBw8foqi6oLXQjvdHYKSxNH5Tdl+9zQj6c08dHBzPv4Csz4CkiCZRFwh6LHdHwJAeV4SJEYPj2Q==}
     peerDependencies:
@@ -1291,6 +1313,11 @@ packages:
 
   '@univerjs/sheets@0.6.2':
     resolution: {integrity: sha512-pswFkQJrQKQ20pFg49ifE13o0KfqoufFRS+Q/B9TEAZJm30+eS2wu8lRYzYACmMrC6G+DooddrYQpDVRxvCLRg==}
+    peerDependencies:
+      rxjs: '>=7.0.0'
+
+  '@univerjs/sheets@0.6.3':
+    resolution: {integrity: sha512-MGy9bIyJilC2M4yHk8D/y6NGTVKgtcaCgngRDj2lJx0NgfYjQx1o+LeBsHTok+Jhx1zHTWsYipd6iAqkdfBZsw==}
     peerDependencies:
       rxjs: '>=7.0.0'
 
@@ -4085,6 +4112,23 @@ snapshots:
     transitivePeerDependencies:
       - '@grpc/grpc-js'
 
+  '@univerjs/core@0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)':
+    dependencies:
+      '@univerjs/protocol': 0.1.43(@grpc/grpc-js@1.12.6)(rxjs@7.8.2)
+      '@wendellhu/redi': 0.17.1
+      dayjs: 1.11.13
+      fast-diff: 1.3.0
+      kdbush: 4.0.2
+      lodash-es: 4.17.21
+      nanoid: 5.1.2
+      numeral: 2.0.6
+      numfmt: 2.5.2
+      ot-json1: 1.0.2
+      rbush: 4.0.1
+      rxjs: 7.8.2
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+
   '@univerjs/data-validation@0.6.2(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)':
     dependencies:
       '@univerjs/core': 0.6.2(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
@@ -4284,7 +4328,22 @@ snapshots:
       - '@grpc/grpc-js'
       - '@wendellhu/redi'
 
+  '@univerjs/engine-formula@0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)':
+    dependencies:
+      '@flatten-js/interval-tree': 1.1.3
+      '@univerjs/core': 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      '@univerjs/engine-numfmt': 0.6.3
+      '@univerjs/rpc': 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      decimal.js: 10.5.0
+      numfmt: 2.5.2
+      rxjs: 7.8.2
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+      - '@wendellhu/redi'
+
   '@univerjs/engine-numfmt@0.6.2': {}
+
+  '@univerjs/engine-numfmt@0.6.3': {}
 
   '@univerjs/engine-render@0.6.2(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)':
     dependencies:
@@ -4730,6 +4789,14 @@ snapshots:
       - '@grpc/grpc-js'
       - '@wendellhu/redi'
 
+  '@univerjs/rpc@0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)':
+    dependencies:
+      '@univerjs/core': 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      rxjs: 7.8.2
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+      - '@wendellhu/redi'
+
   '@univerjs/sheets-conditional-formatting-ui@0.6.2(@grpc/grpc-js@1.12.6)(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(@wendellhu/redi@0.17.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rxjs@7.8.2)(typescript@5.8.2)':
     dependencies:
       '@univerjs/core': 0.6.2(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
@@ -5124,6 +5191,18 @@ snapshots:
       '@univerjs/engine-numfmt': 0.6.2
       '@univerjs/protocol': 0.1.43(@grpc/grpc-js@1.12.6)(rxjs@7.8.2)
       '@univerjs/rpc': 0.6.2(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      rxjs: 7.8.2
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+      - '@wendellhu/redi'
+
+  '@univerjs/sheets@0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)':
+    dependencies:
+      '@univerjs/core': 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      '@univerjs/engine-formula': 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
+      '@univerjs/engine-numfmt': 0.6.3
+      '@univerjs/protocol': 0.1.43(@grpc/grpc-js@1.12.6)(rxjs@7.8.2)
+      '@univerjs/rpc': 0.6.3(@grpc/grpc-js@1.12.6)(@wendellhu/redi@0.17.1)(rxjs@7.8.2)
       rxjs: 7.8.2
     transitivePeerDependencies:
       - '@grpc/grpc-js'
